@@ -1,0 +1,105 @@
+﻿Interneto veikimas:
+  hosting:                      https://www.youtube.com/watch?v=MaW5MNx8l9E
+  Domain name server:           https://www.youtube.com/watch?v=72snZctFFtA&t=243s
+
+Front end:
+  Create full Website:          https://www.youtube.com/watch?v=0zi7iyMX7lU&index=18&list=PLLnpHn493BHHhCVlCRhAMpeFwDH2BTE3p
+  HTML:
+    HTML crash course:          https://www.youtube.com/watch?v=UB1O30fR-EE&t=2492s
+    HTML elements:              https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+    HTML attributes:            https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+    HTML symbols:               https://www.toptal.com/designers/htmlarrows/symbols/
+    
+  CSS: 
+    CSS crash course:           https://www.youtube.com/watch?v=yfoY53QXEnI
+    CSS selectors:              https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
+    CSS selectors example:      https://learn.shayhowe.com/advanced-html-css/complex-selectors/ 
+    CSS properties:             https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+    CSS must-know-properties:   https://zellwk.com/blog/9-important-css-properties-you-must-know/
+    CSS specifity:              https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+    CSS flexbox                 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    Bootstrap:                  https://getbootstrap.com/
+  
+  Javascript:
+    JS crash course:            https://www.youtube.com/watch?v=vEROU2XtPR8&t=626sZNo7MFNFg
+    JS use strict:              https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+    JS iteraciniai metodai      https://codeburst.io/array-methods-explained-filter-vs-map-vs-reduce-vs-foreach-ea3127c6d319
+
+  Puslapio kūrimui naudingos nuroodos:
+    Background paterns:         https://www.heropatterns.com/
+    Shadow generator:           https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Background_and_Borders/Box-shadow_generator
+    Filter generator:           http://angrytools.com/css-generator/filter/
+    Filtrer examples:           https://developer.mozilla.org/en-US/docs/Web/CSS/filter
+    Bootstrap themes:           https://bootswatch.com/
+    Fonts:                      https://fonts.google.com/
+    Icons:                      
+      https://fontawesome.com/?from=io
+      https://www.s-ings.com/typicons/
+
+    Nuotraukų galerija:
+      https://unsplash.com/
+      https://www.pexels.com/
+      https://www.freepik.com/
+      https://www.everypixel.com/
+      https://pixabay.com/
+
+    Puslapio spalvų paletės kūrimui:
+      http://colrd.com/@/thisisthejellyfish/
+      https://color.adobe.com/create/color-wheel/
+      http://paletton.com/#uid=1000u0kgniG8Zsadkn1kVflpJbe
+      Nuotraukos išdrąskymas į 5 splavas:        https://www.canva.com/color-palette/
+      Nuotraukos paieška pagal spalvas ir temas: https://labs.tineye.com/multicolr
+
+    Idėjoms pasisemti:
+      http://www.themezilla.com/themes/hype/
+      https://dribbble.com/
+      https://www.thebestdesigns.com/
+      https://siiimple.com/
+      https://www.cssdsgn.com/
+      https://bestwebsite.gallery/
+      http://styleboost.com/
+      https://www.siteinspire.com/  
+      https://www.admiretheweb.com/blog/
+      http://www.webdesigndev.com/20-luxury-hotel-and-bb-web-designs/
+      https://www.pinterest.com/pin/98023729365792725/?lp=true
+
+    Jeigu galvojate kad jum gerai sekasi ir norite nusivilti, žiūrėti čia:
+      http://kenjiendo.com/album/?fbclid=IwAR3IrEbeZy50XLa1cSwYJbH2k9F8SGERmnJ6ej6uXWgw19zs1sUYxjjMM7Y
+      https://dramosteatras.lt/muziejus/index.html
+      https://threejs.org/examples/css3d_periodictable.html?fbclid=IwAR3nK7v-7gGjU-_wlCssfVQz5LoJK3eMPVaoLwSbbojHmg-zErozB38osYs
+
+    Scroll animacijos:
+      https://alvarotrigo.com/multiScroll/?fbclid=IwAR14jaF30m5BBN-dkkQAxLjjAnetesOJTSzmHRw1zd0FvBxdtmaOeG5b7Vc#second
+
+Backend:
+  Serveriavimo įrankis - XAMPP:                 https://www.apachefriends.org/index.html
+  PHP crach course playlist:                    https://www.youtube.com/watch?v=oJbfyzaA2QA&list=PLillGF-Rfqbap2IB6ZS4BBBcYPagAjpjn
+
+  Objektinis programavimas (OOP) :
+    4 Pagrindinės OOP savybės:                  https://standardofnorms.wordpress.com/2012/09/02/4-pillars-of-object-oriented-programming/   
+    4 OOP savybių teorija:                      https://www.youtube.com/watch?v=HxMw9Cpfb0Y
+    4 OOP savybių įgilinimas praktiškai:        https://www.youtube.com/watch?v=w3XUG6oyINI   
+
+
+Bendros nuorodos:
+  Kalbų ir jų funkcijų nuorodų puslapis:         http://overapi.com/regex
+
+FUN!!!
+  Obejktinio programavimo lavinimui skirtas žaidimas:                 https://codecombat.com/play
+  Puslapis patobulėti ir susidurti su konkrečiomis užduotimis:        https://www.codewars.com/
+
+Programinė įranga:
+  Nemokamas teksto redaktorius: https://code.visualstudio.com/
+  Naršyklė su kuria dirbsime:   https://www.google.com/chrome/
+
+Reikia turėti 
+  kompą *|| USB raktą *|| paštą, informacijos persisiuntymui.                    
+  Mano draugas, kuris pasiūlys kompą su geriausiu kainos/kokybės santykiu:
+    Vaidelis: 
+      Mob. nr:    865897526 
+      El. paštas: Vaidotasbabkaitis@gmail.com
+      Vaidotas Babkaitis. Paminėkit, kad nuo Žilvino
+
+Paaiškinimai:
+  *|| - Arba operatorius
+
