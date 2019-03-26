@@ -1,5 +1,5 @@
-----------------------Masyvai--------------------------
-1. Persirašykite masyvą sudarytą iš  skaičių
+﻿----------------------Masyvai--------------------------
+1. Persirašykite masyvą sudarytą iš skaičių
 2. Sekančias užduotis atlikti su naujamis masyvo kopijomis. 
 Užduotys turi būti iškviečiamuose funkcijose
 3. Padauginti esamo masyvo narius iš 2
@@ -15,6 +15,7 @@ Užduotys turi būti iškviečiamuose funkcijose
 14. Suapvalinti visas masyvo reikšmes iki sveikų skaičių
 15. Atrinkti kas antrą elementą
 16. Atrinkti kas penktą elementą
+
 ----------------------Funkcijos--------------------------
 17. Sukurti funkciją, kuri ima masyvą ir atspausdina kiek-
 vieną jo reikšmę atskirai: [0] => 64.  (nieko negrąžina)
@@ -29,13 +30,27 @@ sią skaičių masyve.
 22. Sukurti funkciją, kuri ima masyvą ir išrikiuja jo ele-
 mentus nuo mažiausio iki didžiausio ir grąžina tą masyvą.
 
-24. Sukurti masyvą, kuris aprašytų knygos duomenis.
+----------------------Asociatyvūs masyvai-----------------
+24. Sukurti masyvą, kuris aprašytų knygos duomenis: title, author, year, genre
 25. Sukurti masyvą, kurio elementai būtų masyvai aprašantys knygas
-24. Išvesti visus knygų  masyvo elementus;
-25. Išvesti visų masyvo elementų vidurkį;
-» Padidinti kiekviena masyvo elementą vienetu;
-» Išvesti automobilis masyvą į ekraną; (dvilypis
-masyvas);
-» Sukurti Fibonacci seką(tai tokia seka, kuomet
+26. Išvesti visus knygų masyvo elementus su var_dump;
+27. Išvesti visus knygų masyvo elementus lentele;
+28. Išvesti visų visų knygų metų vidurkį;
+29. Išrikiuoti masyvą pagal metus;
+30. Išrikiuoti masyvą pagal pavadinimus
+
+----------------------Kūrybinės užduotys-----------------
+1. Sukurti Fibonacci seką(tai tokia seka, kuomet
 sekantis skaičius yra sudedamas su prieš tai 2
-einančiu.
+einančių načių sumos. Pirmieji nariai 0 ir 1.
+2. Parašykite funkciją, kuri mestų kauliuką iki kol iškris 5 arba 6. Visus
+  savo metimus išvestu i ekrana. (||, while)
+  Metame 2 kauliukus (arba vieną kauliuką 2 kartus). Taisyklės:
+  Jeigu kauliukų suma yra mažiau už 5 reiškia - jūs iškarto pralaimejote.
+  Jeigu kauliukų suma daugiau už 5 ir:
+  - išmesta buvo 6 ir 6, reiškia - laimėjote dviratį.
+  - abiejų kauliukų išmestas skaičius yra vienodas, bet ne 6 ir 6 - reiškia jūs
+  laimėjote bilietą į kiną.
+  - kitais atvejais – kauliukas metamas dar kartą.
+  - Žaidimas turi vykti iki kol žaidėjas laimės / pralaimės(while)
+  - Visa zaidimo eiga turėtų būti išvesta į ekraną
