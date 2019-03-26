@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <title>Šablonas be Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Laila|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style/css/main.css">
+  <link rel="stylesheet" href="style/css/toggler.css">
+  <link rel="stylesheet" href="style/css/typography.css">
+  <link rel="stylesheet" href="style/css/navbar.css">
+  <link rel="stylesheet" href="style/css/register-form.css">
+  <link rel="stylesheet" href="style/css/footer.css">
+  <link rel="stylesheet" href="style/css/responsive.css">
+</head>
+
+<body class="preload">
+  <nav class="navigation bg-brown">
+    <div class="container position-relative">
+      <div class="nav-left">
+        <a href="#home">
+          <span class="brand">CodeAcademy</span>
+        </a>
+        <span class="separator">|</span>
+        <ul class="links">
+          <li class="link"><a href="#home">Home</a></li>
+          <li class="link"><a href="#about">About</a></li>
+          <li class="link"><a href="#register">Register</a></li>
+          <li class="link"><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="nav-right d-none d-lg-block" data="toggler-menu">
+        <span><a href="">Login</a></span>
+        <span class="separator">|</span>
+        <span><a href="">Forgot password?</a></span>
+        <!-- <span><a href="">Logout</a></span> -->
+      </div>
+      <span class="login-toggler d-block d-lg-none ml-auto"></span>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="hero-container">
+      <div class="container text-center text-header text-shadow">
+        <h1 class="text-primary display-3 font-weight-bold">CodeAcademy hotel</h1>
+        <p class="text-white h2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus harum eum tempora
+          obcaecati aliquid
+          nisi amet neque itaque expedita adipisci.</p>
+        <button class="btn btn-primary">Esminis tikslas</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="content">
+    <div class="container">
+      <h1 class="text-header text-primary h2">About</h1>
+      <p class="content-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, tempore. Labore odio odit
+        omnis saepe rem. Molestias voluptatum vitae, distinctio alias similique impedit cum beatae natus sed eos
+        dolorem animi laudantium voluptatem dolore facere dignissimos modi laboriosam ipsum doloremque voluptates
+        adipisci quo eum. Molestias maxime temporibus obcaecati consectetur est fugit reprehenderit ducimus, blanditiis
+        animi non laudantium tempore repellat beatae laboriosam repudiandae excepturi iusto quis minima enim id ipsa
+        assumenda earum. Explicabo tempore, sed quibusdam quam repudiandae, eligendi consectetur odit numquam, deleniti
+        totam quia quas voluptatem atque? Laborum illum quisquam cum, cumque consectetur tempore ipsa totam possimus
+        corrupti dolorem, obcaecati magni id animi. Architecto magni cum et reiciendis tempore iure cumque itaque.
+        Autem quisquam alias vel in veniam expedita, similique officia beatae praesentium officiis accusantium omnis,
+        ipsum eius perspiciatis harum! Ab quos rerum sunt voluptate. Repudiandae maxime quod est placeat hic modi alias
+        laborum. Repellendus suscipit voluptates vero sequi, doloribus sed voluptas consequatur impedit numquam velit
+        eum nobis esse earum voluptatibus voluptate accusantium error optio eligendi facilis quos? Labore dolorem earum
+        nam neque aliquam atque suscipit ipsam! Deleniti qui aliquid delectus, quia voluptatibus cupiditate sapiente
+        sint quaerat, magnam id rerum inventore, aperiam architecto! Officiis excepturi, error dolore amet unde nostrum
+        aspernatur?</p>
+    </div>
+  </section>
+
+  <section class="cover cover-1"></section>
+
+  <section id="register" class="content">
+    <div class="container">
+      <h1 class="text-header text-primary h2">Register</h1>
+      <form id="form-register">
+        <div class="form-section-container">
+          <div class="form-section">
+            <div class="form-group">
+              <label class="text-header text-primary h4" for="name">Name</label>
+              <input type="text" id="name" placeholder="Arbūzas">
+            </div>
+            <div class="form-group">
+              <label class="text-header text-primary h4" for="surname">Surname</label>
+              <input type="text" id="surname" placeholder="Arbūzauskas">
+            </div>
+            <div class="form-group">
+              <label class="text-header text-primary h4" for="mail">Email</label>
+              <input type="email" id="mail" placeholder="arbuzas">
+            </div>
+            <div class="form-group">
+              <label class="text-header text-primary h4" for="tel">Mobile</label>
+              <input type="tel" id="tel" placeholder="+366 688 88888">
+            </div>
+            <div class="form-section-bottom">
+              <button class="btn btn-primary btn-bottom">Next</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section-container">
+          <div class="form-section">
+            <h3 class="text-center text-header text-primary h3">Choose hotel</h3>
+            <div class="form-check">
+              <input type="radio" name="city" id="vilnius">
+              <label for="vilnius">Kaunas, Savaitgalio g. 18</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" name="city" id="kaunas">
+              <label for="kaunas">Vilnius, Pusiaukelės g. 18c</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" name="city" id="klaipeda">
+              <label for="klaipeda">Klaipėda, Pakrantės g. 2</label>
+            </div>
+            <h3 class="text-center text-header text-primary h3">Perks</h3>
+
+            <div class="form-check">
+              <input type="checkbox" id="fridge">
+              <label for="fridge">Fridge</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="balcony">
+              <label for="balcony">Balkonas</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="wi-fi">
+              <label for="wi-fi">Wi-fi</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="pool">
+              <label for="pool">Pool</label>
+            </div>
+            <h3 class="text-center text-header text-primary h3">Select floor</h3>
+            <!-- TODO: select>options -->
+            <div class="form-section-bottom">
+              <button class="btn btn-primary btn-bottom">Next</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section-container">
+          <div class="form-section">
+            <h3 class="text-center text-header text-primary h3">Add image</h3>
+            <div>
+              <input type="file" id="img-input" accept=".jpg, .png">
+              <div class="js-image-container"></div>
+            </div>
+
+            <div class="form-section-bottom">
+              <button class="btn btn-primary btn-bottom">Finish</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="cover cover-2"></section>
+
+  <footer id="contacts" class="bg-brown">
+    <div class="container clearfix px-0">
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4588.591400263988!2d23.904528203131754!3d54.89773200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e7220b540ef601%3A0x73a4d3584b59778d!2sHotel+%22Kaunas+City%22!5e0!3m2!1slt!2slt!4v1551700691530"
+          class="map" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="contact-container">
+        <h1 class="text-header h2">Contacts</h1>
+        <div class="contact-line">
+          <i class="fas fa-map-marker-alt"></i>
+          <span class="text-bold">Address:</span>
+          <span>Laisvės al. 90, Kaunas 44251</span>
+        </div>
+        <div class="contact-line">
+          <i class="fas fa-at"></i>
+          <span class="text-bold">Email:</span>
+          <span>Paula@CodeAcademy.lt</span>
+        </div>
+        <div class="contact-line">
+          <i class="fas fa-phone"></i>
+          <span class="text-bold">Administration:</span>
+          <span>+370 654 89784</span>
+        </div>
+        <div class="contact-line">
+          <i class="fas fa-phone"></i>
+          <span class="text-bold">Info:</span>
+          <span>+370 654 89783</span>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="js/toggler.js"></script>
+  <script src="js/uploadPhoto.js"></script>
+</body>
+
+</html>

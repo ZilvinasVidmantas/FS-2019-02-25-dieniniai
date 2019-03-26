@@ -1,0 +1,45 @@
+#parent-grey{
+  background: #aaa;
+  padding: 40px;
+  min-height: 400px;
+  width: 300px;
+}
+
+#parent-yellow{
+  background: lightyellow;
+  padding: 40px;
+  min-height: 400px;
+  width: 300px;
+}
+
+#parent-black{
+  background: #000;
+  padding: 40px;
+  min-height: 400px;
+  width: 300px;
+}
+
+.child{
+  margin: 5px;
+  background: #085;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  vertical-align: top;
+}
+
+.child-before{
+  background: #129;
+}
+
+.child-after{
+  background: #517;
+}
+
+.child-prepended{
+  background: #0ff;
+}
+
+.child-appended{
+  background: #0f0;
+}

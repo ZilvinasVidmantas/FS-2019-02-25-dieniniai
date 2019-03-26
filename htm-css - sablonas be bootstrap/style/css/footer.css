@@ -1,0 +1,44 @@
+footer {
+  background: #000;
+  height: 350px;
+  padding: 25px 0;
+  color: #fff;
+  font-size: 22px;
+}
+footer .text-header{
+  color: #fff;
+}
+
+.map-container,
+.contact-container{
+  height: 300px;
+  width: calc(50% - 15px);
+  float: right;
+}
+
+.map{
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+
+.contact-line{
+  margin-bottom: .7em;
+}
+
+footer i{
+  width: 1.6em;
+  display: inline-block;
+}
+footer .text-bold{
+  width: 10em;
+  display: inline-block;
+}
+
+footer hr{
+  margin: 1em 1.6em;
+}
+
+.map-container{
+  float: right;
+}

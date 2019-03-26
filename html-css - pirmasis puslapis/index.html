@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mano pirmasis puslapis</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="#headers">Antraštės</a>
+    <a href="#table">Lentelė</a>
+    <a href="#images">Nuotraukos</a>
+    <a href="#lists">Sąrašai</a>
+    <a href="#display">Atvaizdavimo tipai</a>
+    <a href="#forms">Formos</a>
+
+  </div>
+
+  <h3 id="headers">Headers</h3>
+  <h1>Čia yra 1 dydžio antraštė</h1>
+  <h2>Čia yra 2 dydžio antraštė</h2>
+  <h3>Čia yra 3 dydžio antraštė</h3>
+  <h4>Čia yra 4 dydžio antraštė</h4>
+  <h5>Čia yra 5 dydžio antraštė</h5>
+  <h6>Čia yra 6 dydžio antraštė</h6>
+  <hr>
+
+  <h3 id="table">Table example</h3>
+  <div>
+    <table width="100%" border="1">
+      <thead>
+        <tr>
+          <th>Vardas</th>
+          <th>Pavardė</th>
+          <th>Amžius</th>
+          <th>Ūgis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jonas</td>
+          <td>Kazlauskas</td>
+          <td>55</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>Birutė</td>
+          <td>Bartkevičienė</td>
+          <td>32</td>
+          <td>168</td>
+        </tr>
+        <tr>
+          <td>data 1</td>
+          <td>data 2</td>
+          <td>data 3</td>
+          <td>data 4</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr>
+
+  <h3 id="images">Images</h3>
+
+  <h5>Nuotrauka iš interneto</h5>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCRdy-xqdYAs_g95P-gsnPcw8FgUYK-SqSq814BY6i55piXZrG"
+    alt="Nerasta nuotrauka">
+
+
+  <h5>Nuotrauka iš failų sistemos</h5>
+  <img src="img/img.jpg" alt="Nerasta nuotrauka">
+
+  <h5>Tik plotis</h5>
+  <img src="img/img.jpg" alt="Nerasta nuotrauka" width="500px">
+
+  <h5>Tik aukštis</h5>
+  <img src="img/img.jpg" alt="Nerasta nuotrauka" height="500px">
+
+  <h5>Abu</h5>
+  <img src="img/img.jpg" alt="Nerasta nuotrauka" height="500px" width="500px">
+  <hr>
+
+  <h3 id="lists">Lists</h3>
+
+  <h5>Unsorted lists</h5>
+  <ul>
+    <li>Apple</li>
+    <li>Pear</li>
+    <li>Banana</li>
+    <li>Kiwi</li>
+    <li>Grapes</li>
+  </ul>
+
+  <h5>Sorted lists</h5>
+  <ol>
+    <li>Performance</li>
+    <li>Security</li>
+    <li>Spreadability</li>
+    <li>Maintence</li>
+    <li>Price</li>
+  </ol>
+
+  <h3 id="display">Display tipai</h3>
+  <h5>Div's - block</h5>
+  <div class="bg-blue d-block">div</div>
+  <div class="bg-blue d-block">div</div>
+  <div class="bg-blue d-block">div</div>
+
+  <h5>Span's - inline</h5>
+  <span class="bg-red">span</span>
+  <span class="bg-red">span</span>
+  <span class="bg-red">span</span>
+  <span class="bg-red">span</span>
+  <span class="bg-red">span</span>
+  <span class="bg-red">span</span>
+
+  <h5>Span's - inline-block</h5>
+  <span class="bg-green d-inline-block">span</span>
+  <span class="bg-green d-inline-block">span</span>
+  <span class="bg-green d-inline-block">span</span>
+  <span class="bg-green d-inline-block">span</span>
+  <span class="bg-green d-inline-block">span</span>
+  <span class="bg-green d-inline-block">span</span>
+  <hr>
+
+  <h3 id="forms">Forms</h3>
+  <form id="form-register">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name">
+    </div>
+    <div class="form-group">
+      <label for="surname">Surname</label>
+      <input type="text" id="surname">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password">
+    </div>
+    <div class="form-group">
+      <label for="rep-password">Repeat Password</label>
+      <input type="password" id="rep-password">
+    </div>
+    <input type="submit" value="Registruotis">
+  </form>
+  <hr>
+
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+body {
+  margin: 60px 0 0;
+}
+h1, h2, h3, h4, h5, h6{
+  text-align: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  height: 40px;
+  line-height: 40px;
+  padding: 10px;
+}
+
+.navbar>a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navbar>a:hover {
+  color: grey
+}
+
+h3[id] {
+  margin-top: -60px;
+  padding-top: 60px;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.d-block {
+  height: 30px;
+  margin: 10px;
+  width: 200px;
+}
+
+.d-inline-block {
+  display: inline-block;
+  height: 40px;
+  border: 1px solid magenta;
+  margin: 25px;
+  padding: 10px;
+}
+
+/* Formos lygiavimas (mokymosi tikslais) */
+#form-register {
+  margin: auto;
+  display: block;
+  width: 350px;
+}
+
+#form-register>[type="submit"]{
+  display: block;
+  margin: auto;
+}
+
+.form-group {
+  display: block;
+  margin: 10px;
+}
+
+.form-group>label {
+  display: inline-block;
+  width: 150px;
+}
+
+.form-group>input {
+  border-radius: 5px;
+  height: 30px;
+  text-indent: 10px;
+}

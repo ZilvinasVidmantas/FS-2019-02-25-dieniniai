@@ -1,0 +1,36 @@
+------------------------------------ 1 Dalis ------------------------------------ 
+1. Sukurti objektų masyvą su 20 elementų, kuriame būtų:
+  - name
+  - surname
+  - age
+  - height
+  - weight
+  - sex
+2. Kiekvienai užduočiai kurti pradinio masyvo kopijas
+3. Panaudojant array.foreach:
+  - Atspausdinti kiekvieną elementą
+  - Atspausdinti kiekvieno elemento pilną vardą
+  - Atspausdinti kiekvieno elemento masės indeksą
+4. Panaudojant array.filter atrinkti į naują masyvą ir po to atspausdinti:
+  - kurių vardas ilgesnis nei 6 simboliai
+  - kurių svoris didesnis nei 80kg
+  - kurie aukštesni nei 185cm
+5. Panaudojant array.map atrinkti į naują masyvą ir po to atspausdinti
+  - ūgius
+  - svorius
+  - ūgius, svorius ir amžius
+  - KMI indeksus
+  - KMI indeksus ir amžius
+6. Panaudojant array.reduce suskaičiuoti ir po to atspausdinti
+  - svorių vidurkius
+  - ūgio vidurkius
+------------------------------------ 2 Dalis ------------------------------------ 
+0. Pasinaudojant 1 dalies elementų masyvu, sukurti person prototipą(Class):
+    - priskirti jam visas masyve išvardintas saybes.
+    - jame sukurti vidinį metodą: getBMI();     // suskaičiuoja kūno masės indeksą
+    - jame sukurti vidinį metodą: toString();   // atspausdina žmogų su esamom savybėm
+1. Atrinkti moteris, kuriuos jaunesnės nei 20 metų ir svoris didesnis nei 70kg 
+2. Atrinkti vyrus, kurie vyresni nei 25 metai ir KMI mažesnis nei 18,5
+3. Atrinkti vaikus, su antsvoriu
+4. Atrinkti pensininkus, su antsvoriu
+5. Pašalinti iš esamo masyvo visus, kieno KMI nepatenka į rėžius [18.5; 25]

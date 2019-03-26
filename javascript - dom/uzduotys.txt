@@ -1,0 +1,30 @@
+--------------------------------------------------- DOM pagrindai ------------------------------------------------------------
+1. Susikurti naują aplanką puslapiui ir jame griaučius su bootstrap
+2. Sukurti mygtuką, kurį paspaudus parašomas tekstas konsolėje
+3. Sukurti mygtuką ir h3 elementą. Paspaudus mygtuką, turi pasikeisti tekstas h3 elemente.
+4. Sukurti mygtuką ir h3 elementą. Paspaudus mygtuką, turi pasikeisti h3 elemento splva.
+5. Sukurti mygtuką, įvedimo laukelį ir h3 elementą. Paspaudus mygtuką, turi pasikeisti h3 elemento tekstas į tokį, kaip laukelyje.
+6. Sukurti mygtuką, spalvos laukelį ir h3 elementą. Paspaudus mygtuką, turi pasikeisti h3 elemento spalva į tokią, kaip laukelyje.
+7. Sukurti mygtuką, <select> ir h3 elementą. Paspaudus mygtuką, turi pasikeisti h3 elemento tekstas į tokį, kaip <select>.
+
+------------------------------------------------------ Formos ------------------------------------------------------------------
+                                                ------ Svarbu ------
+Pa'submit'inus formą persikrauna puslapis, todėl priskiriant joms event listenerius reikia sustabdyti jų numatytąjį perkrovimą:
+  document.querySelector('#formos-selektorius').addEventListener('submit', (e) =>{
+    e.preventDefault(); - Atšaukia puslapio perkrovimą.                     ↑ įvykio kintamasis
+    console.log(e.target); - e.target tai elementas, ant kurio buvo įvykdytas įvykis(šiuo atveju, mūsų forma)   
+  });
+                                                --------------------
+1. Sukurti formą ir paspaudus submit mygtuką parašyti beleką. Naudoti 'submit' įvykį, norint reaguoti į formos patvirtinimą.
+2. Sukurti formoje vardo ir pavardės įvedimo lauku. Pa'submit'inus formą parašyti konsolėje pilną vardą.
+3. Pridėti formoje lyties radio mygtukus ir parašyti konsolėje, kad buvo pasirinkti formos submit'inimo metu.
+4. Pridėti formoje mokytūsi kalbų checkbox'sus. Formos submit'inimo metu parašyti konsolėje visas pasirinktas kalbas(checkbox vertes)
+5. Atspausdinti visas formos vertes po forma išlygiuotu formatu.
+
+------------------------------------------------- Raganėjimo atveju -------------------------------------------------------------
+1. Sukurti darbuotojo prototipą, su laukais: name, surname, position, salary. Prototipo (klasės) aprašą laikyti atskirame faile.
+2. Sukurti darbuotojų prototipų masyvą.
+3. Sukurti metodą darbuotojo prototipe: formRow(). Jis turi grąžinti <tr> elementą su visom savybėm, kaip teksto(string) elementą
+4. Sukurti funkciją(ne prototipe), kuri ima darbuotojų prototipų masyvą: workersToTable(array). Ir atspausdina juos lentele.
+5. Atspausdinti lentele tik darbuotojus, kurių atlyginimas didesnis nei 2000 eurų.
+

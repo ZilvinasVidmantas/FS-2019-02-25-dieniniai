@@ -1,0 +1,35 @@
+/* Nuo SM dydžio */
+@media (min-width: 576px){
+
+}
+
+/* Nuo MD dydžio */
+@media (min-width: 768px){
+
+}
+
+/* Nuo LG dydžio */
+@media (min-width: 992px){
+
+  .form-section-container {
+    width: 290px;
+    height: 460px;
+  }
+  footer {
+    font-size: 18px; 
+  }
+}
+
+/* Nuo XL dydžio */
+@media (min-width: 1200px){
+  
+  .form-section-container {
+    width: 340px;
+  }
+
+  
+  footer {
+    font-size: 21px; 
+  }
+
+}

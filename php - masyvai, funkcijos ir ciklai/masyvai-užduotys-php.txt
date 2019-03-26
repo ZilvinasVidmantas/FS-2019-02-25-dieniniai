@@ -1,4 +1,4 @@
-﻿----------------------Masyvai--------------------------
+----------------------Masyvai--------------------------
 1. Persirašykite masyvą sudarytą iš skaičių
 2. Sekančias užduotis atlikti su naujamis masyvo kopijomis. 
 Užduotys turi būti iškviečiamuose funkcijose
@@ -43,6 +43,7 @@ mentus nuo mažiausio iki didžiausio ir grąžina tą masyvą.
 1. Sukurti Fibonacci seką(tai tokia seka, kuomet
 sekantis skaičius yra sudedamas su prieš tai 2
 einančių načių sumos. Pirmieji nariai 0 ir 1.
+
 2. Parašykite funkciją, kuri mestų kauliuką iki kol iškris 5 arba 6. Visus
   savo metimus išvestu i ekrana. (||, while)
   Metame 2 kauliukus (arba vieną kauliuką 2 kartus). Taisyklės:

@@ -1,0 +1,59 @@
+.square{
+  height: 100px;
+  width: 100px;
+}
+
+.carousel-img{
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  filter: sepia(17%);
+}
+
+.carousel-img-1{ background-image: url(../img/room1.jpg)}
+.carousel-img-2{ background-image: url(../img/room2.jpg)}
+.carousel-img-3{ background-image: url(../img/room3.jpg)}
+.carousel-img-4{ background-image: url(../img/room4.jpg)}
+.carousel-img-5{ background-image: url(../img/room5.jpg)}
+
+.row{
+  margin-bottom: 20px;
+}
+
+.col-square{
+  height: 300px;
+  width: 300px;
+  display: block;
+  margin: 0 auto 20px;
+  border: 2px solid magenta;
+}
+
+@media (min-width: 576px) {
+  .col-square{
+    height: 500px;
+    width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-square{
+    height: 320px;
+    width: 320px;
+  }
+}
+
+@media (min-width: 996px) {
+  .col-square{
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-square{
+    height: 250px;
+    width: 250px;
+  }
+}
+

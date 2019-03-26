@@ -1,0 +1,93 @@
+body {}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+.container{
+  margin: auto;
+  padding: 30px;
+  width: 920px;
+}
+
+.bg-red {
+  background: red;
+}
+
+.d-inline-block {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border: 5px solid purple;
+}
+
+.m  { margin:         20px }
+.mx { margin:         0    20px }
+.my { margin:         20px 0 }
+.ml { margin-left:    20px }
+.p  { padding:        20px }
+.px { padding:        0    20px }
+.py { padding:        20px 0 }
+.pr { padding-right:  20px } 
+
+.contact-image{
+  height: 250px;
+  width: 250px;
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  background-size: cover; 
+  margin-bottom: 20px;
+}
+
+.contact-image-1 {background-image: url(../img/contact1.png)}
+.contact-image-2 {background-image: url(../img/contact2.jpg)}
+.contact-image-3 {background-image: url(../img/contact3.jpg)}
+
+.contact-image+p{
+  text-align: justify;
+  font-size: 19px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #a5472a;
+  font-weight: 900; /* default */
+  font-style: italic;
+}
+
+.container>.contact-image:nth-child(2n){
+  margin-right: 20px;
+}
+
+.container>.contact-image:nth-child(2n - 1){
+  margin-left: 20px;
+}
+
+/* .contact-png:nth-child(2n - 1)+p{
+  text-align: right;
+} */
+
+.float-left{
+  float: left;
+  display: block;
+}
+
+.float-right{
+  float: right;
+  display: block;
+}
+
+.clear-fix{
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+img{
+  width: 50%;
+  display: block;
+  float: left;
+}
+
+.d-flex{
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: space-evenly;
+}

@@ -1,0 +1,13 @@
+#hero {
+  height: 100vh;
+  background-image: url(../img/cover.jpg);
+  background-size: cover;
+}
+
+.game-container {
+  height: 876px;
+  width: 1024px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.876);
+  box-shadow: 4px 4px 4px 4px #000;
+}
