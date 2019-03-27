@@ -1,10 +1,10 @@
-----------------------Masyvai--------------------------
+﻿----------------------Masyvai--------------------------
 1. Persirašykite masyvą sudarytą iš skaičių
 2. Sekančias užduotis atlikti su naujamis masyvo kopijomis. 
 Užduotys turi būti iškviečiamuose funkcijose
 3. Padauginti esamo masyvo narius iš 2
 4. Pakelti masyvo narius kvadratu
-5. Padauginti masyvo narius iš jų index'0 (vietos masyve)
+5. Padauginti masyvo narius iš jų index'o (vietos masyve)
 6. Atrinkti tiktai teigimų elementų masyvą
 7. Atrinkti tiktai neigiamų elementų masyvą
 8. Atrinkti tiktai lyginių skaičių masyvą
