@@ -1,0 +1,35 @@
+------------------------- function overloading ---------------------
+  Fukcijų 'perkrovimas' (function overloading) - tai funkcijos funkcionalumo 
+plėtimas pagal skirtingus parametrus ir/arba jų tipus.
+1. Parašykite funkcijai sum logiką, jog ji galėtų:
+  - sudėti 2 skaičius
+  - sudėti 3 skaičius
+  - sudėti bet kokį kiekį skaičių
+  - sudėti visus skaičius masyve
+  - sudėti skaičius esančius paduodamame masyve (praleisti kitus tipus)
+  - sudėti visas skaitines vertes masyve ( '3', '-2')
+
+  - sudėti bet kokio tipo, bet kokį kiekį elementų  (masyvas, masyve, masyve...) // Rekursija
+
+------------------------- Paveldimumas ---------------------
+1. Sukurkite klasių paveldimumo medį, (visos, visų klasių savybės private):
+    - abstract Figure                $edges[]{n}, $angles[]{n}, $isCircle, $radius
+        - Triangle                   $edges[]{3}, $angles[]{3}
+            - EquilateralTriangle    $edge
+            - RightTriangle          $edges[]{2}, $angles[]{2}, $hypotenuse  
+        - Quadrilateral              $edges[]{4}, $angles[]{4}
+            - Parallelogram          $edges[]{2}, $angles[]{2}
+                - Rectangle          $edges[]{2}
+                    - Square         $edge
+        - Circle                     $radius
+2. Parašykite klasėms konstruktorius, jog pagal juos būtų aprašomos figūros PILNAI
+    - abstract Figure                __construct()
+        - Triangle                   __construct()
+            - EquilateralTriangle    __construct()
+            - RightTriangle          __construct()
+        - Quadrilateral              __construct()
+            - Parallelogram          __construct()
+                - Rectangle          __construct()
+                    - Square         __construct()
+        - Circle                     __construct()
+3. Figure klasei deklaruoti abstrakčią funkciją printArea ir implementuoti klasėse

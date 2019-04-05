@@ -1,0 +1,7 @@
+Sukurti LandVehicle klasę, su unikalia savybe, kuri paveldi klasę Vehicle
+Sukurti Motorbike klasę, su unikalia savybe, kuri paveldi klasę LandVehice
+Sukurti Car klasę, su unikalia savybe, kuri paveldi klasę LandVehice
+Sukurti 3 naujas Motorbike transporto priemones masyve $landVehicles
+Sukurti 3 naujas Car transporto priemones ir pridėti prie $landVehicles
+
+Pridėti LandVehicle klasei unikalų metodą ir jį panaudoti 
