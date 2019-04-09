@@ -1,5 +1,5 @@
------------------------------------- 1 Dalis ------------------------------------ 
-1. Sukurti objektų masyvą su 20 elementų, kuriame būtų:
+﻿------------------------------------ 1 Dalis ------------------------------------ 
+1. Sukurti objektų masyvą su 8 elementais, kuriame būtų:
   - name
   - surname
   - age
@@ -10,7 +10,7 @@
 3. Panaudojant array.foreach:
   - Atspausdinti kiekvieną elementą
   - Atspausdinti kiekvieno elemento pilną vardą
-  - Atspausdinti kiekvieno elemento masės indeksą
+  - Atspausdinti kiekvieno elemento kūno masės indeksą
 4. Panaudojant array.filter atrinkti į naują masyvą ir po to atspausdinti:
   - kurių vardas ilgesnis nei 6 simboliai
   - kurių svoris didesnis nei 80kg

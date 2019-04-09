@@ -83,10 +83,20 @@ Backend:
 
 Bendros nuorodos:
   Kalbų ir jų funkcijų nuorodų puslapis:         http://overapi.com/regex
+  Nuostabus Regex puslapis: 			 https://regexr.com/
+  HTTP request metodai:				 https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+  HTTP status codes:				 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 
 FUN!!!
   Obejktinio programavimo lavinimui skirtas žaidimas:                 https://codecombat.com/play
   Puslapis patobulėti ir susidurti su konkrečiomis užduotimis:        https://www.codewars.com/
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------
 
 Programinė įranga:
   Nemokamas teksto redaktorius: https://code.visualstudio.com/

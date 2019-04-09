@@ -1,0 +1,120 @@
+------------------------- function overloading ---------------------
+  Fukcijų 'perkrovimas' (function overloading) - tai funkcijos funkcionalumo 
+plėtimas pagal skirtingus parametrus ir/arba jų tipus.
+1. Parašykite funkcijai sum logiką, jog ji galėtų:
+  - sudėti 2 skaičius
+  - sudėti 3 skaičius
+  - sudėti bet kokį kiekį skaičių
+  - sudėti visus skaičius masyve
+  - sudėti skaičius esančius paduodamame masyve (praleisti kitus tipus)
+  - sudėti visas skaitines vertes masyve ( '3', '-2')
+
+  - sudėti bet kokio tipo, bet kokį kiekį elementų  (masyvas, masyve, masyve...) // Rekursija
+
+------------------------- Paveldimumas ---------------------
+1. Sukurkite klasių paveldimumo medį, (visos, visų klasių savybės private):
+    - abstract Figure                $edges, $angles, $isCircle, $radius
+        - Triangle                   $edge1, $edge2, $angle
+            - RightTriangle          $edge1, $edge2  
+            - EquilateralTriangle    $edge
+        - Quadrilateral              $edges, $angles
+            - Parallelogram          $edge1, $edge2, $angle
+                - Rectangle          $edge1, $edge2
+                    - Square         $edge
+        - Circle                     $radius
+
+2. Parašykite klasėms konstruktorius, jog pagal paduodamus konstruktoriaus parametrus, būtų iškviečiami
+  tėvo kontruktorai su atitinkamais parametrais:
+  ---------------------- Pavyzdys --------------------------------
+class Quadrilateral
+{
+  public function __construct($edges, $angles)
+  {
+   echo '<h3>Kažkoks keturkampis</h3>';
+   // Pabaigti paveldėjimą !!!
+  }
+}
+
+class Parallelogram extends Quadrilateral
+{
+  private $edge1;
+  private $edge2;
+  private $angle;
+
+  public function __construct($edge1, $edge2, $angle)
+  {
+    $this->edge1 = $edge1;
+    $this->edge2 = $edge2;
+    $this->angle = $angle;
+    $edges = [];
+    $angles = [];
+    array_push($edges, $edge1);
+    array_push($edges, $edge2);
+    array_push($edges, $edge1);
+    array_push($edges, $edge2);
+    array_push($angles, 180 - $angle);
+    array_push($angles, $angle);
+    array_push($angles, 180 - $angle);
+    array_push($angles, $angle);
+    parent::__construct($edges, $angles);
+  }
+}
+
+class Rectangle extends Parallelogram
+{
+  private $edge1;
+  private $edge2;
+
+  public function __construct($edge1, $edge2)
+  {
+    $this->edge1 = $edge1;
+    $this->edge2 = $edge2;
+    parent::__construct($edge1, $edge2, 90);
+  }
+}
+
+class Square extends Rectangle
+{
+  private $edge;
+
+  public function __construct($edge)
+  {
+    $this->edge = $edge;
+    parent::__construct($edge, $edge);
+  }
+}
+var_dump(new Square(5));
+var_dump(new Rectangle(5, 7));
+var_dump(new Parallelogram(5, 7, 60));
+
+  ---------------- Kontruktorių parametrai ------------------------
+    - abstract Figure                __construct($radius OR $edges [, $angles])
+        - Triangle                   __construct($edge1, $edge2, $angle) 
+            - EquilateralTriangle    __construct($edge)
+            - RightTriangle          __construct($edge1, $edge2)
+        - Quadrilateral              __construct($edge1, $edge2, $edge3, $angle1, $angle2)
+            - Parallelogram          __construct($edge1, $edge2, $angle)
+                - Rectangle          __construct($edge1, $edge2)
+                    - Square         __construct($edge)
+        - Circle                     __construct($radius)
+
+3. Perkrauti (overload) Figure klasės konstuktorių, jog ją galėtų paveldėti visos figūros
+4. Sukurti visoms klasėms, kurioms galima po objektą ir išsaugokite masyve $figures;
+5. Figure klasėje deklaruoti abstaktų metodą getArea();
+6. Realizuoti (implement) getArea() metodą klasėse Triangle, Quadrilateral ir Circle;
+7. Atspausdinti visų figūrų plotus;
+8. Figure klasėje aprašyti metoda getPerimeter();
+9. Atspausdinti visų figūrų perimetrus;
+10. Figure klasėje aprašyti metodą toString(), kuris atspausdintų lygiuotu formatu: 
+    - kuo tikslesnį figūros tipą 
+    - plotą
+    - perimetrą 
+    - apskritimo atveju
+        - spindulį
+    - kitu atveju 
+        - kraštinių skaičių
+        - kampų skaičių
+11. Perrašyti kiekvienos figūros savybes į Triangle, Quadrilateral ir Circle klases.
+Jokių parametrų žemesnėse klasėse.
+
+

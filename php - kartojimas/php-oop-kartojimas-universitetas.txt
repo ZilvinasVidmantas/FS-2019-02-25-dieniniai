@@ -1,0 +1,82 @@
+1. Susikurti klasę University su savybėmis:
+  - title: string
+  - faculties: array: Faculty
+  - rector: UniversityMember
+  - members: array: UniversityMember
+
+2. Sukurti abstrakčią klasę UniversityMember su savybėmis:
+  - personId: int (11)
+  - name: string
+  - surname: string
+  - modules: array: Module 
+  - faculty: Faculty
+  - isAcademic: bool
+
+3. Sukurti klasę Student su savybėmis:
+  - course: int
+  - studyField: string
+  - potencialDegree: string
+
+4. Sukurti klasę Lecturer su savybėmis:
+  - degree: string
+
+5. Sukurti klasę Employee su savybėmis:
+  - position: string
+  - salary: double
+
+6. Sukurti klasę Module su savybėmis:
+  - title: string
+  - credits: int
+
+7. Sukurti klasę Faculty su savybėmis:
+  - title: string
+  - possibleStudyFields: array: string
+  - members: array: UniversityMember 
+
+8. Student ir Employee paveldi UniversityMember;
+
+9. Lecturer paveldi Employee
+
+------------------ Konstruktorių įeinamieji parametrai -------------------
+University:             public __construct($title)
+UniversityMember:       protected __construct($personId, $name, $surname)
+Student:                public __construct($personId, $name, $surname, $studyField, $potencialDegree) 
+Employee:               public __construct($personId, $name, $surname, $position, $salary) 
+Lecturer:               public __construct($personId, $name, $surname, $position, $salary, $degree) 
+Module:                 public __construct($title, $credits) 
+Faculty:                public __construct($title) 
+---------------------------------------------------------------------------
+
+10. Sukurti University klasėje metodą public addFaculty($title), kur į masyvą $this->falculties įdedamas naujai
+sukurtas Faculty objektas, pagal duotą pavadinimą - $title;
+
+11. Sukurti University klasėje metodą toString(), kuris atspausdintų pavadinimą ir jeigu yra:
+  - fakultetus
+
+12. Sukurti University klasėje metodą public addMember($member), kur į masyvą $this->members įdedamas $member kintamasis,
+kuris privalo paveldėti UniversityMember klasę.
+
+13. Sukurti Faculty klasėje metodą addMember() kuris pagal paduodamus parametrus galėtų sukurti:
+  - Employee klasės objektą, kviečiant vidinį metodą private createEmployee(...) 
+  - Lecturer klasės objektą, kviečiant vidinį metodą private createLecturer(...)
+  - Student klasės objektą, kviečiant vidinį metodą private createStudent(...)
+Ir tuomet sukurtą objektą pridėtų į $this->members masyvą.
+
+14. Papdildyti University::addMember() metodą perkrovimu:
+  - kuomet paduodami parametrai yra  University::addMember($faculty, ... kiti naujai kuriamo UniversityMember parametrai ...)
+    - jeigu yra toks fakultetas $faculty, kviesti  Faculty::addMember(... kiti naujai kuriamo UniversityMember parametrai ...)
+    - ir tuomet tą naują narį pridėti į University:members masyvą.
+
+15. Sukurti UniversityMember::toString(), kuris spausdintų savo pagrindines savybes
+
+16. Sukurti Faculty::toString(), kuris spausdintų pavadinimą ir jei yra, savo narius
+
+17. Sukurti Universiteto objektą su 1 fakultetu ir 3 nariais: Studentu, darbuotoju ir dėstytoju
+
+18. Atvaizduoti ekrane University:toString();
+
+19. Uždėti UniversityMember::toString() padaryti abstrakčiu, ir implementuoti toString() metodą paveldinčiose klasėse.
+
+
+
+
