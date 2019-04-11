@@ -1,0 +1,12 @@
+------------------------- function overloading ---------------------
+  Fukcijų 'perkrovimas' (function overloading) - tai funkcijos funkcionalumo 
+plėtimas pagal skirtingus parametrus ir/arba jų tipus.
+1. Parašykite funkcijai sum logiką, jog ji galėtų:
+  - sudėti 2 skaičius
+  - sudėti 3 skaičius
+  - sudėti bet kokį kiekį skaičių
+  - sudėti visus skaičius masyve
+  - sudėti skaičius esančius paduodamame masyve (praleisti kitus tipus)
+  - sudėti visas skaitines vertes masyve ( '3', '-2')
+
+  - sudėti bet kokio tipo, bet kokį kiekį elementų  (masyvas, masyve, masyve...) // Rekursija

@@ -1,16 +1,3 @@
-------------------------- function overloading ---------------------
-  Fukcijų 'perkrovimas' (function overloading) - tai funkcijos funkcionalumo 
-plėtimas pagal skirtingus parametrus ir/arba jų tipus.
-1. Parašykite funkcijai sum logiką, jog ji galėtų:
-  - sudėti 2 skaičius
-  - sudėti 3 skaičius
-  - sudėti bet kokį kiekį skaičių
-  - sudėti visus skaičius masyve
-  - sudėti skaičius esančius paduodamame masyve (praleisti kitus tipus)
-  - sudėti visas skaitines vertes masyve ( '3', '-2')
-
-  - sudėti bet kokio tipo, bet kokį kiekį elementų  (masyvas, masyve, masyve...) // Rekursija
-
 ------------------------- Paveldimumas ---------------------
 1. Sukurkite klasių paveldimumo medį, (visos, visų klasių savybės private):
     - abstract Figure                $edges, $angles, $isCircle, $radius
@@ -114,7 +101,17 @@ var_dump(new Parallelogram(5, 7, 60));
     - kitu atveju 
         - kraštinių skaičių
         - kampų skaičių
-11. Perrašyti kiekvienos figūros savybes į Triangle, Quadrilateral ir Circle klases.
-Jokių parametrų žemesnėse klasėse.
+11. Perkelti kiekvienos figūros savybes į Triangle, Quadrilateral ir Circle klases.
+Jokių parametrų žemesnėse klasėse. Ir padaryti jas protected
+12. Sukurti Polygon klasę ir perkelti Triangle ir Quadrilateral perimetro skaičiavimą  į Polygon // Jei nuobodu
+13. Kampų skaičiavimo funkcijas aprašyti Figure klasėje kaip statinius metodus.
+14. Sudokumentuoti vartotojui metodų naudojimą klasių konstruktoriams ir statinėms funkcijoms. Pravartūs extensionai naudojant VS code:
+  - PHP DocBlocker
+  - Better Comments
+15. Klausimai pasitikrinimui, norint įsisavinti atlikti raštu:
+  - Kur pasireiškia paveldimumas?
+  - Kur pasireiškia inkapsuliacija?
+  - Kur pasireiškia abstrakcija?
+  - Kur pasireiškia polimorfizmas?
 
 

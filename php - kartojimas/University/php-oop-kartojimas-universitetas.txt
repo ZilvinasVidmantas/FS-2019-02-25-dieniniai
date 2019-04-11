@@ -71,11 +71,16 @@ Ir tuomet sukurtą objektą pridėtų į $this->members masyvą.
 
 16. Sukurti Faculty::toString(), kuris spausdintų pavadinimą ir jei yra, savo narius
 
-17. Sukurti Universiteto objektą su 1 fakultetu ir 3 nariais: Studentu, darbuotoju ir dėstytoju
+17. Sukurti Universiteto objektą. 
+  - pridėti 2 fakultetus
+    - kiekvienam fakultetui sukurti po 2 dėstytojus, 6 studentus ir administratorę
+  - sukurti tesinininką visam universitetui
 
 18. Atvaizduoti ekrane University:toString();
 
 19. Uždėti UniversityMember::toString() padaryti abstrakčiu, ir implementuoti toString() metodą paveldinčiose klasėse.
+
+20. 
 
 
 
