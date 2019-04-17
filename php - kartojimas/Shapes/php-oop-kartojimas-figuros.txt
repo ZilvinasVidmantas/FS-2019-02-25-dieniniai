@@ -113,5 +113,3 @@ Jokių parametrų žemesnėse klasėse. Ir padaryti jas protected
   - Kur pasireiškia inkapsuliacija?
   - Kur pasireiškia abstrakcija?
   - Kur pasireiškia polimorfizmas?
-
-

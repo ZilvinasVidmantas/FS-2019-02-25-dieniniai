@@ -1,3 +1,4 @@
+------------------------------------------- Pradinis struktūrų formavimas ---------------------------------------------
 1. Susikurti klasę University su savybėmis:
   - title: string
   - faculties: array: Faculty
@@ -37,7 +38,7 @@
 
 9. Lecturer paveldi Employee
 
------------------- Konstruktorių įeinamieji parametrai -------------------
+------------------------------------------ Konstruktorių įeinamieji parametrai -----------------------------------------
 University:             public __construct($title)
 UniversityMember:       protected __construct($personId, $name, $surname)
 Student:                public __construct($personId, $name, $surname, $studyField, $potencialDegree) 
@@ -45,43 +46,108 @@ Employee:               public __construct($personId, $name, $surname, $position
 Lecturer:               public __construct($personId, $name, $surname, $position, $salary, $degree) 
 Module:                 public __construct($title, $credits) 
 Faculty:                public __construct($title) 
----------------------------------------------------------------------------
 
-10. Sukurti University klasėje metodą public addFaculty($title), kur į masyvą $this->falculties įdedamas naujai
+---------------------------------------------- Pradinių metodų formavimas -----------------------------------------------
+1. Sukurti University klasėje metodą public addFaculty($title), kur į masyvą $this->falculties įdedamas naujai
 sukurtas Faculty objektas, pagal duotą pavadinimą - $title;
 
-11. Sukurti University klasėje metodą toString(), kuris atspausdintų pavadinimą ir jeigu yra:
+2. Sukurti University klasėje metodą toString(), kuris atspausdintų pavadinimą ir jeigu yra:
   - fakultetus
 
-12. Sukurti University klasėje metodą public addMember($member), kur į masyvą $this->members įdedamas $member kintamasis,
+3. Sukurti University klasėje metodą public addMember($member), kur į masyvą $this->members įdedamas $member kintamasis,
 kuris privalo paveldėti UniversityMember klasę.
 
-13. Sukurti Faculty klasėje metodą addMember() kuris pagal paduodamus parametrus galėtų sukurti:
-  - Employee klasės objektą, kviečiant vidinį metodą private createEmployee(...) 
+4. Sukurti Faculty klasėje metodą addMember() kuris pagal paduodamus parametrus galėtų sukurti:
+  - Employee klasės objektą, kviečiant vidinį metodą private createEmployee(...)
   - Lecturer klasės objektą, kviečiant vidinį metodą private createLecturer(...)
   - Student klasės objektą, kviečiant vidinį metodą private createStudent(...)
 Ir tuomet sukurtą objektą pridėtų į $this->members masyvą.
 
-14. Papdildyti University::addMember() metodą perkrovimu:
-  - kuomet paduodami parametrai yra  University::addMember($faculty, ... kiti naujai kuriamo UniversityMember parametrai ...)
-    - jeigu yra toks fakultetas $faculty, kviesti  Faculty::addMember(... kiti naujai kuriamo UniversityMember parametrai ...)
-    - ir tuomet tą naują narį pridėti į University:members masyvą.
+5. Dabar parašysime logiką, jog visi universiteto nariai būtų pridedami per universiteto objektą.
+  - Todėl papildykime University::addMember() metodą perkrovimu (overload):
+    - University::addMember($facultytTitle, ... privalomi parametrai, norint sukurti UniversityMember ...)
+5.1 - Perkrovimo logikoje:
+  - Patikrinti ar yra toks fakultetas pavadinimu $facultytTitle, universiteto masyve $this->members. 
+    - Jei taip, kviesti 13 užduotyje aprašytą Faculty::addMember metodą, per atitikusį objektą su visais parametrais
+     aprart fakulteto pavadinimo($facultytTitle, ... privalomi parametrai, norint sukurti UniversityMember ...)
+      - Papildyti kodą Faculty::addMember:
+        - sėkmingai pridėjus narį, grąžinti jį į iškvietimo vietą, priešingu atveju - false.
+      - Tuomet tą grąžintą naują narį pridėti į $this->members masyvą. ($this - universiteto objektas)
+    - Priešingu atveju grąžinti false;
 
-15. Sukurti UniversityMember::toString(), kuris spausdintų savo pagrindines savybes
+6. Sukurti UniversityMember::toString(), kuris spausdintų savo visas savybes.
 
-16. Sukurti Faculty::toString(), kuris spausdintų pavadinimą ir jei yra, savo narius
+7. Sukurti Faculty::toString(), kuris spausdintų pavadinimą, ir jei yra, savo narius.
 
-17. Sukurti Universiteto objektą. 
+8. Sukurti Universiteto objektą. 
   - pridėti 2 fakultetus
     - kiekvienam fakultetui sukurti po 2 dėstytojus, 6 studentus ir administratorę
-  - sukurti tesinininką visam universitetui
+  - sukurti tesinininką visam universitetui.
 
-18. Atvaizduoti ekrane University:toString();
+9. Atvaizduoti ekrane University::toString();
 
-19. Uždėti UniversityMember::toString() padaryti abstrakčiu, ir implementuoti toString() metodą paveldinčiose klasėse.
+10. UniversityMember::toString() padaryti abstrakčiu metodu:
+ 10.1 Implementuoti toString() metodą paveldinčiose klasėse, jog būtų atspausdintos visos savybės.
 
-20. 
+11. Atvaizduoti ekrane University::toString();
+
+---------------------------------------Universiteto narių spausdinimas lentele -------------------------------------------------
+1. UniversityMember klasėje sukuriame metodą, UniversityMember::toRow();
+
+2. Sukuriame vidinį, "raktų - reikšmių" masyvą $rowData, kur:
+  2.1 Rakte saugosime savybės pavadinimą camelCase formatu: string
+  2.2 Reikšmėje saugosime suformuotą reikšmę vartotojui matyti: string
+
+3. $rowData masyve turi būti:
+  3.1 Visos UniversityMember savybės su raktais. Jei yra nenustatytų savybių, reikšmės turi būti: '-nenustatyta-'
+  3.2 Jį paveldinčių klasių savybių raktai su reikšmėmis: '-nenustatyta-'
+
+Apsirašykime pagalbinį metodą, kurį naudosime ir kituose programos metoduose
+4. Pasirašyti static University::camelToTitle($camel): string
+  4.1  Metodas turi reikalauti camelCase tipo string'o ir grąžinti "grąžų" string'ą, pvz.:
+    'isAcademic' => 'Is academic'
+    'surname' => 'Surname'
+    'veryLongVarName' => 'Very long var name'
+
+5. Viduje metodo UniversityMember::toRow() formuojame HTML eilutę:
+  - Sukuriame kintamąjį $row ir jo pradinę reikšmę nustatome į HTML eilutės elemento atidarymo tag'ą.
+  - Iteruojame per visus $rowData elementus.
+  - Papildome $row kintamąjį iteruojamų $rowData masyvo elementų reikšmėmis, įvilktomis į HTML "table data" tag'us.
+  - Baigus iteruoti per $rowData elementus papildome $row kintamąjį HTML eilutė uždarymo tag'u.
+
+6. Parašome direktyvą, kuri grąžins suformuotą eilutę į metodo iškvietimo vietą.
+
+7. Perrašyti(override) metodą toRow() UniversityMember klasės vaikinėse klasėse.
+  7.1 Žemiausių klasių toRow() metodai turi siųsti savo savybes tėvo metodui tuo pačiu pavadinimu (toRow).
+    7.1.1 Tėvo savybes siųsti suformuotu raktų => reikšmių masyvu, analogišku aprašytam 3 punkte.
+  7.2 Tarpinės klasės turi persiųsti savo savybių tėvo metodui toRow(), kaip 7.1 ir 7.1.1 punktuose.
+    7.2.1 Jei paduodamas per parmetrus savybių masyvas iš vaikinių klasių, jį prijungti prie 7.2 formuojamo masyvo.
+
+8. UniversityMember::toRow() metode papaildyti funkcionalumą:
+  8.1 Patikrinti ar per parametrus buvo paduotas papildomas masyvas su vaiko savybėmis
+    8.1.1 Jei taip, iteruoti per kiekvieną gauto masyvo savybę ir jei jos raktas rastas tarp $rowData raktų,
+      pridėti iteruojamo masyvo reikšmę į $rowData masyvę sutapusiu raktu.
+
+9. Sukurti analogiškus metodus Faculty::membersToTable() ir University::membersToTable(),
+ kurie suformuoja (NE atspausdina) HTML lentelę pagal $this->members.
+  9.1 Suformuojti lentelės antraštę.
+  9.2 Iteruojant per $members masyvą su kiekvienu nariu klijuoti eilutes naudojant $member->toRow();
+  9.3 Parašome direktyvą, kuri grąžins suformuotą eilutę į metodo iškvietimo vietą.
+
+-----------------------------Papildomai----------------------------------
+
+10. Prabėkite programą su debug'eriu, nusipieškite struktūras ant popieriaus su pieštuku
+
+11. Peržvelkite: 
+  https://www.php.net/manual/en/function.get-object-vars.php
+  https://www.php.net/manual/en/function.get-class-vars.php
+
+12. Pagalvokite, kaip ir kur būtų galima optimizuoti/supaprastinti kodą
+
+13. Atlikite savo patobulinimus
+
+14. Praktikoje labai bloga praktika yra tėvo metoduose implementuoti vaikinių klasių savybes ar kitaip susijusią informaciją.
+  - Sugalvokite būdą formuoti eilutėms su vienodu kiekiu duomenų.
 
 
-
-
+  

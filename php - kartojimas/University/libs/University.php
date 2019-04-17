@@ -5,19 +5,19 @@ class University
     private $faculties;
     private $rector;
     private $members;
-    private $faculty;
 
     public function __construct($title)
     {
         $this->title = $title;
         $this->faculties = [];
-        $this->rector = [];
         $this->members = [];
     }
+
     public function addFaculty($title)
     {
         array_push($this->faculties, new Faculty($title));
     }
+
     public function toString()
     {
         $result = '<h3>' . $this->title . '</h3>';
@@ -52,12 +52,13 @@ class University
             }
             if ($facultyFound && gettype($result) != 'string') {
                 $member = $result;
+                $member->setFaculty($facultyTitle);
             } else {
-                echo $result ?? '<h3 style="color:red">Nėra toko fakulteto: ' . $facultyTitle . '<h3>';
+                echo $result ?? '<h3 style="color:red">Nėra toko fakulteto: ' . $facultyTitle . '</h3>';
                 return false;
             }
         } else {
-            echo '<h3 style="color:red">Blogi parametrai kuriant Universiteto narį<h3>';
+            echo '<h3 style="color:red">Blogi parametrai kuriant Universiteto narį</h3>';
             return false;
         }
 
@@ -65,4 +66,35 @@ class University
         return true;
     }
 
+    public static function camelToString($camel)
+    {
+        $result = $camel[0];
+        for ($i = 1; $i < strlen($camel); $i++) {
+            if ($camel[$i] === ucfirst($camel[$i])) $result .= ' ';
+            $result .= lcfirst($camel[$i]);
+        }
+        return ucfirst($result);
+    }
+
+    public function membersToTable()
+    {
+        $tableString = '<h3>There are no members in University</h3>';
+        if (count($this->members) > 0) {
+            $tableString = '
+            <table border="1" width="100%">
+                <thead>
+                    <tr>';
+            foreach (UniversityMember::$propertyNames as $key) $tableString .= '
+                        <th>' . University::camelToString($key) . '</th>';
+            $tableString .= '
+                    </tr>
+                </thead>
+                <tbody>';
+            foreach ($this->members as $member) $tableString .= $member->toRow();
+            $tableString .= '
+                </tbody>
+            </table>';
+        }
+        return $tableString;
+    }
 }
