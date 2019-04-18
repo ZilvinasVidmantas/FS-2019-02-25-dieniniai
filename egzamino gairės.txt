@@ -1,0 +1,99 @@
+--------------------------- WWW -----------------------------
+1. Kas yra internetas?
+2. Kas yra IP?
+3. Kas yra HTTP protokolas?
+4. Kokių tipų HTTP užklausas žinote?
+5. Kas yra serveris (backend)?
+6. Kas yra klientas (frontend)?
+
+---------------- Frontend - client side ---------------------
+1. Kas yra HTML? Kodėl ir kaip jis naudojamas?
+2. Kam skirta <head>...</head> dalis?
+3. Kam skirta <body>...</body> dalis?
+4. Kas yra HTML elemento atributas?
+5. Kokius žinote savaime užsidarančius HTML elementus?
+6. Kuom HTML'e skiriasi vaikas nuo palikuonio?
+7. Kiek tėvų gali turėti HTML elementas?
+8. Kam skirta HTML forma? Kokiu HTTP metodus galite jos deka formuoti ir siųsti?
+9. Kokio tipo input'us žinote?
+10. Kokio atributo deka galite suformuoti duomenis <form> tago viduje?
+
+  --------------------------- CSS --------------------------
+0. Kas yra CSS? Panaudojimo būdai? Prioritetai?
+1. Kas yra css savybė?
+2. Kas yra css selektorius?
+3. Išvardinkite jums žinomas display savybes ir skirtumus.
+4. Išvardinkite bent 3 jums žinomus bootstrap komponentus ir išvardinkite, ką jie daro.
+5. Kokius žinote position tipus? 
+6. Kuom skiriasi margin nuo padding?
+7. Ką daro box-sizing css savybė?
+8. Ką daro float? Kokie float display reikalavimai?
+9. Kaip išligiuoti bloką vidurį konteinerio horizontaliai?
+10. Kaip išligiuoti bloką vidurį konteinerio vertikaliai?
+
+  ----------------------- Javascript ------------------------
+  1. Kas yra javascript? Kokia jo paskirtis internetinėje naršyklėje?
+  2. Kokius žinote javascript framework'us?
+  3. Kas yra framework'as?
+  4. Kas yra kintamasis?
+  5. let vs var vs const?
+  6. Kokie yra kintamūjų tipai?
+  7. Kas yra objektas?
+  8. Kas yra masyvas?
+  9. Kas yra ciklas ir kokie yra jų tipai?
+    - for
+    - while
+    - do... while
+  10. Kas yra funkcija? 
+  11. Kam reikalingi funkcijos parametrai?
+  12. Ką daro direktyva 'return'?
+  13. Kas yra funkcijos aprašymas?
+  14. Kas yra funkcijos kvietinys?
+  15. Kam naudojami Array klasės iteravimo metodai: 
+    - foreach 
+    - map 
+    - filter 
+    - reduce 
+    https://codeburst.io/array-methods-explained-filter-vs-map-vs-reduce-vs-foreach-ea3127c6d319
+  16. Kas yra ir kaip veikia salyginis sakinys?
+  17. Kas yra tęstiniai salyginiai sakiniai (else if, else if ...) ir kaip juos naudoti?
+  18. Koks switch panašumas su tęstiniais salyginiais sakiniais?
+  19. Referencs ir primitive type kintamieji, skirtumai
+  20. Kas yra prototipas?
+  21. Kas yra event'as?
+  22. Kas yra event listener'is?
+  23. Kaip vadinamas kintamasis, kuriame yra viso puslapio HTML objektų medis?
+  24. Kas yra AJAX?
+  25. Kaip įgalinamas ir naudojamas method-chaining?
+
+------------------ Backend - server side ---------------------
+  ---------------------------- PHP -------------------------
+  1. Kuom skiriasi kodą kompiliuojančios ir interpretuojančios kalbos?
+    https://www.programiz.com/article/difference-compiler-interpreter
+  2. PHP kompiliuojanti ar interpretuojanti kalba?
+    https://stackoverflow.com/questions/1514676/is-php-compiled-or-interpreted
+  3. Kokius žinot super globalius kintamuosius?
+  4. Kaip surinkti duomenis iš frontend ir persiųsti PHP? (formos)
+  5. Kokie skirtumai tarp PHP ir Javascript kintamųjų TIPŲ.
+  6. Kas yra klasė?
+  7. Pasiekiamumo tipai: private, protected, public.
+  7. Kas yra paveldimumas? Kodėl ir kam?
+  8. Kas yra abstrakcija? Kodėl ir kam?
+  9. Kas yra polimorfizas? Kodėl ir kam?
+  10. Kas yra inkapsuliacija? Kodėl ir kam?
+  11. Kas yra MVC? 
+  12. Už ką atsakingas MVC:
+    - Model'is?
+    - View'as?
+    - Controller'is?
+  13. Kas yra autentifikacija?
+  14. Kas yra autorizacija?
+  15. Kas yra metodų perrašymas: overriding?
+  16. Kas yra metodų perkrovimas: overloading?
+  
+  ---------------------------- SQL -------------------------
+  1. Kaip saugomi duomenys duomenų bazėse?
+  2. Kokius veiksmus galima atlikti su duomenimis? (create, delete, alter...)
+  3. Kokius žinote duomenų suvaržymus? ( unique, prima..)
+  4. Kas yra primary key? 
+  5. Kuom skiriasi lentelių apjungimo būdai: LEFT JOIN vs INNER JOIN vs FULL JOIN
